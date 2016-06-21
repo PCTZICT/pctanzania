@@ -77,8 +77,18 @@ WSGI_APPLICATION = 'pctz.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+       'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pctzdatabase',
+        'USER': 'postgres',
+        'PASSWORD': '!K4ribuni',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',      
+		# 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'pctzdatabase',
+        # 'USER': 'admin',
+        # 'PASSWORD': '!K4ribuni',
+        # 'HOST': '127.0.0.1',
+        # 'PORT': '5432',
     }
 }
 
@@ -107,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'TZ'
 
 USE_I18N = True
 
