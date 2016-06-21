@@ -117,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'TZ'
+TIME_ZONE = 'Africa/Dar_es_Salaam'
 
 USE_I18N = True
 
