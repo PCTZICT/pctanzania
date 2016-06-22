@@ -49,3 +49,6 @@ class BusTrip(models.Model):
 			return 'Nightime'
 	def __str__(self):
 		return self.review_title
+		
+class Committee(models.Model):
+	committee_name = models.CharField(max_length = 64)
