@@ -52,3 +52,5 @@ class BusTrip(models.Model):
 		
 class Committee(models.Model):
 	committee_name = models.CharField(max_length = 64)
+	def __str__(self):
+                return self.committee_name+"Hi"
