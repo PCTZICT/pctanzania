@@ -1,1 +1,1 @@
-web: python pctz/manage.py collectstatic --noinput; web: gunicorn pctz.wsgi:application --log-file -
+web: python manage.py collectstatic --noinput; web: gunicorn pctz.wsgi:application --log-file -
