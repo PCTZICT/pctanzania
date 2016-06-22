@@ -25,7 +25,7 @@ SECRET_KEY = '@+(52y6&u@6=o%#%)ce=r4$r8ryl#j9!!u1(xq!k)g25*pwix$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','localhost','http://127.0.0.1:8000/']
 
 
 # Application definition
@@ -77,18 +77,18 @@ WSGI_APPLICATION = 'pctz.wsgi.application'
 
 DATABASES = {
     'default': {
-       # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'pctzdatabase',
-        # 'USER': 'postgres',
-        # 'PASSWORD': '!K4ribuni',
-        # 'HOST': '127.0.0.1',
-        # 'PORT': '5432',      
-		'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5qra00e9post',
-        'USER': 'rnkddbvsacdrog',
-        'PASSWORD': 'Hkk76pTpefYzrRdP2AaYnozRae',
-        'HOST': 'ec2-46-137-73-65.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432',
+       'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'pctzdatabase',
+        'USER': 'postgres',
+        'PASSWORD': '!K4ribuni',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',      
+		# 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'd5qra00e9post',
+        # 'USER': 'rnkddbvsacdrog',
+        # 'PASSWORD': 'Hkk76pTpefYzrRdP2AaYnozRae',
+        # 'HOST': 'ec2-46-137-73-65.eu-west-1.compute.amazonaws.com',
+        # 'PORT': '5432',
     }
 }
 
@@ -131,3 +131,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/LearnDjango/pctz/static/'
+# STATIC_ROOT = (os.path.join(os.path.dirname(__file__), '..', 'static'))
