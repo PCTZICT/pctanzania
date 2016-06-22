@@ -77,18 +77,18 @@ WSGI_APPLICATION = 'pctz.wsgi.application'
 
 DATABASES = {
     'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pctzdatabase',
-        'USER': 'postgres',
-        'PASSWORD': '!K4ribuni',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',      
-		# 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'd5qra00e9post',
-        # 'USER': 'rnkddbvsacdrog',
-        # 'PASSWORD': 'Hkk76pTpefYzrRdP2AaYnozRae',
-        # 'HOST': 'ec2-46-137-73-65.eu-west-1.compute.amazonaws.com',
-        # 'PORT': '5432',
+       # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'pctzdatabase',
+        # 'USER': 'postgres',
+        # 'PASSWORD': '!K4ribuni',
+        # 'HOST': '127.0.0.1',
+        # 'PORT': '5432',      
+		'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd5qra00e9post',
+        'USER': 'rnkddbvsacdrog',
+        'PASSWORD': 'Hkk76pTpefYzrRdP2AaYnozRae',
+        'HOST': 'ec2-46-137-73-65.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
