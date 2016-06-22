@@ -1,1 +1,1 @@
-web: gunicorn pctz.wsgi:application --log-file -
+web: python my_django_app/manage.py collectstatic --noinput; web: gunicorn pctz.wsgi:application --log-file -
